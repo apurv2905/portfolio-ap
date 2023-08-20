@@ -12,7 +12,7 @@ type Props = {};
 export default function Hero({}: Props) {
     const [text, count] = useTypewriter({
         words: [
-            "Hey! My Name's Apurv.",
+            "Hey! My Name is Apurv.",
             "Pixels, Coffee, and endless Code.",
             "<Front-EndDeveloper />"
         ],
@@ -20,7 +20,7 @@ export default function Hero({}: Props) {
         delaySpeed: 2000,
     });
     return (
-        <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
+        <section className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
             <BackgroundCircles />
             <Image
                 src="https://i.ibb.co/k3HSgFF/square-Head.jpg"
@@ -49,7 +49,7 @@ export default function Hero({}: Props) {
             {/*    width={120}*/}
             {/*    // height={50}*/}
             {/*/>*/}
-            <div className="z-20">
+            <section className="z-20">
                 <h2 className="text-sm uppercase text-gray-500 p-2 tracking-[10px]">
                     Software Engineer
                 </h2>
@@ -58,7 +58,7 @@ export default function Hero({}: Props) {
                     <Cursor cursorColor="#fff" />
                 </h1>
 
-                <div className="pt-5">
+                <section className="pt-5">
                     <Link href="#about">
                         <button className="hero-button">About</button>
                     </Link>
@@ -71,8 +71,8 @@ export default function Hero({}: Props) {
                     <Link href="#projects">
                         <button className="hero-button">Projects</button>
                     </Link>
-                </div>
-            </div>
-        </div>
+                </section>
+            </section>
+        </section>
     );
 }
