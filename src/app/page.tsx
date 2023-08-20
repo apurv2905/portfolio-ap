@@ -6,6 +6,7 @@ import Hero from "@/Components/Hero/Hero";
 import About from "@/Components/About/About";
 import Experience from "@/Components/Experience/Experience";
 import Skills from "@/Components/Skills/Skills";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -142,17 +143,17 @@ export default function Home() {
           <ContactMe />
         </section>
 
-        {/*<Link href="#hero">*/}
-        {/*  <footer className="sticky bottom-5 w-full cursor-pointer">*/}
-        {/*    <div className="flex justify-end mr-5">*/}
-        {/*      <img*/}
-        {/*          className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"*/}
-        {/*          src="https://i.ibb.co/k3HSgFF/square-Head.jpg"*/}
-        {/*          alt=""*/}
-        {/*      />*/}
-        {/*    </div>*/}
-        {/*  </footer>*/}
-        {/*</Link>*/}
+        <Link href="#hero">
+          <footer className="sticky bottom-5 w-full cursor-pointer">
+            <div className="flex justify-end mr-5">
+              <img
+                  className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
+                  src="https://i.ibb.co/k3HSgFF/square-Head.jpg"
+                  alt=""
+              />
+            </div>
+          </footer>
+        </Link>
       </main>
   )
 }
