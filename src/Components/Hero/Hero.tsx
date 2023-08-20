@@ -25,8 +25,8 @@ export default function Hero({}: Props) {
             <Image
                 src="https://i.ibb.co/k3HSgFF/square-Head.jpg"
                 alt="memoji"
-                width="128"
-                height="128"
+                width="500"
+                height="500"
                 quality="95"
                 priority={true}
                 className="h-32 w-32 rounded-full object-cover"

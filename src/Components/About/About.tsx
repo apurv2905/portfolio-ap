@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-
+import Image from "next/image";
 type Props = {};
 
 export default function About({}: Props) {
@@ -19,20 +19,25 @@ export default function About({}: Props) {
             className="flex flex-col relative h-screen overflow-y-auto text-center md:text-left md:flex-row max-w-4xl px-10 justify-evenly mx-auto items-center"
         >
             <h3 className="absolute top-24 uppercase tracking-[10px] text-gray-500 text-1xl">About</h3>
-            <motion.img
-                initial={{
-                    x: -200,
-                    opacity: 0,
-                }}
-                transition={{
-                    duration: 1.2,
-                }}
-                whileInView={{
-                    opacity: 1,
-                    x: 0,
-                }}
-                viewport={{ once: true }}
+            <Image
+                // initial={{
+                //     x: -200,
+                //     opacity: 0,
+                // }}
+                // transition={{
+                //     duration: 1.2,
+                // }}
+                // whileInView={{
+                //     opacity: 1,
+                //     x: 0,
+                // }}
+                // viewport={{ once: true }}
                 src="https://i.ibb.co/SmWn2VZ/full-Final.jpg"
+                alt="memoji"
+                width="800"
+                height="800"
+                // quality="95"
+                // priority={true}
                 className="mt-20 -mb-10 md:mb-0 flex-shrink-0 w-[200px] h-[200px] rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[300px] xl:h-[400px]"
             />
             <div className="space-y-10 px-0 md:px-10">
