@@ -2,9 +2,9 @@
 // import pic from '../../../public/squareHead.jpg';
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
-// import BackgroundCircles from "@/Components/Hero/BackgroundCircles";
+import BackgroundCircles from "@/Components/Hero/BackgroundCircles";
 import Link from "next/link";
-import Image from "next/image";
+// import Image from "next/image";
 // import Image from "next/image";
 
 type Props = {};
@@ -21,22 +21,22 @@ export default function Hero({}: Props) {
     });
     return (
         <section className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
-            {/*<BackgroundCircles />*/}
-            <Image
-                src="https://i.ibb.co/k3HSgFF/square-Head.jpg"
-                alt="memoji"
-                width="128"
-                height="128"
-                quality="95"
-                priority={true}
-                className="h-32 w-32 rounded-full object-cover"
-            />
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            {/*<img*/}
-            {/*    className="relative h-32 w-32 rounded-full"*/}
+            <BackgroundCircles />
+            {/*<Image*/}
             {/*    src="https://i.ibb.co/k3HSgFF/square-Head.jpg"*/}
-            {/*    alt=""*/}
+            {/*    alt="memoji"*/}
+            {/*    width="128"*/}
+            {/*    height="128"*/}
+            {/*    quality="95"*/}
+            {/*    priority={true}*/}
+            {/*    className="h-32 w-32 rounded-full object-cover"*/}
             {/*/>*/}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+                className="relative h-32 w-32 rounded-full"
+                src="https://i.ibb.co/k3HSgFF/square-Head.jpg"
+                alt=""
+            />
             {/*<Image*/}
             {/*    className="rounded-full"*/}
             {/*    src="/squareHead.jpg" alt="" height={128} width={128}/>*/}
