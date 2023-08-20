@@ -34,8 +34,8 @@ export default function About({}: Props) {
                 // viewport={{ once: true }}
                 src="https://i.ibb.co/SmWn2VZ/full-Final.jpg"
                 alt="memoji"
-                width="800"
-                height="800"
+                width="400"
+                height="400"
                 // quality="95"
                 // priority={true}
                 className="mt-20 -mb-10 md:mb-0 flex-shrink-0 w-[200px] h-[200px] rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[300px] xl:h-[400px]"
