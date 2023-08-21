@@ -18,7 +18,7 @@ export default function Projects({}: Props) {
             key: 2,
             projectName: "Food Talk - Ordering app",
             imgUrl: "https://media.istockphoto.com/id/1004591262/vector/burger-with-crown-logo-illustration.jpg?s=612x612&w=0&k=20&c=LlzCALcTkHECx7O7QGFRJG7HLeleeVgb0V_2n7W0BU4=",
-            description: "Experience a seamless and intuitive food ordering experience through my React.js-based Food Ordering App. This dynamic application showcases a curated selection of meals, fetched in real-time from Firebase, coupled with a sleek and captivating user interface. The app boasts essential functionalities, including the ability to add items to the cart and remove them at will."
+            description: "Indulge in a smooth food ordering journey with my React.js Food Ordering App. Real-time Firebase integration brings a curated menu to life, while a sleek interface allows easy cart management. Enjoy seamless adding and removal of items for a satisfying experience."
         },
         {
             key: 3,
@@ -52,7 +52,7 @@ export default function Projects({}: Props) {
             <div className="relative w-full flex overflow-x-auto scrollbar-thin scrollbar-track-black scrollbar-thumb-blue-300/80 overflow-y-hidden snap-x snap-mandatory z-20">
                 {projects.map((project, i) => (
                     // eslint-disable-next-line react/jsx-key
-                    <div key="key" className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-32 xl:p-80 h-screen">
+                    <div key={project.key} className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-32 xl:p-80 h-screen">
                         <motion.img
                             initial={{
                                 opacity: 0,
@@ -70,7 +70,7 @@ export default function Projects({}: Props) {
                         />
 
                         <div className="space-y-10 px-0 md:px-10 max-w-6xl">
-                            <h4 className="text-2xl font-semibold text-center">
+                            <h4 className="text-[18px] sm:text-2xl font-semibold text-center">
                                 <span>
                                     Project {i + 1} of {projects.length}
                                 </span>
