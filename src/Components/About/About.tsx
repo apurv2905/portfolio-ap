@@ -33,14 +33,14 @@ export default function About({}: Props) {
                 }}
                 viewport={{ once: true }}
                 src="https://i.ibb.co/SmWn2VZ/full-Final.jpg"
-                className="mt-20 -mb-10 md:mb-0 flex-shrink-0 w-[200px] h-[200px] rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[300px] xl:h-[400px]"
+                className="mt-20 -mb-10 md:mb-0 flex-shrink-0 w-[150px] h-[150px]  rounded-full object-cover md:rounded-lg md:w-[200px] md:h-[250px] xl:w-[300px] xl:h-[400px]"
             />
             <div className="space-y-10 px-0 md:px-10">
                 <h4 className="text-2xl font-semibold">
                     Concise <span className="underline decoration-blue-300/100">Introduction</span>
                 </h4>
                 <p className="py-0 my-0">
-                    Hello there, I am Apurv, a passionate and dedicated undergraduate student pursuing my studies at the prestigious Indian Institute of Information Technology Vadodara. I amm on a journey to master the art of front-end development, crafting immersive and captivating digital experiences that seamlessly blend design and technology.
+                    Hello there, I am Apurv, a passionate and dedicated undergraduate student pursuing my studies at the prestigious Indian Institute of Information Technology Vadodara. I am on a journey to master the art of front-end development, crafting immersive and captivating digital experiences that seamlessly blend design and technology.
                 </p>
             </div>
         </motion.div>

@@ -2,28 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+/*:root {*/
+/*  --foreground-rgb: 0, 0, 0;*/
+/*  --background-start-rgb: 214, 219, 220;*/
+/*  --background-end-rgb: 255, 255, 255;*/
+/*}*/
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+/*@media (prefers-color-scheme: dark) {*/
+/*  :root {*/
+/*    --foreground-rgb: 255, 255, 255;*/
+/*    --background-start-rgb: 0, 0, 0;*/
+/*    --background-end-rgb: 0, 0, 0;*/
+/*  }*/
+/*}*/
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  /*color: rgb(var(--foreground-rgb));*/
+  /*background: linear-gradient(*/
+  /*    to bottom,*/
+  /*    transparent,*/
+  /*    rgb(var(--background-end-rgb))*/
+  /*  )*/
+  /*  rgb(var(--background-start-rgb));*/
+  background-color: black;
+  color: white;
 }
 
 @layer components {
@@ -32,6 +34,6 @@ body {
   }
 
   .contact-input {
-    @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-[#000000] text-gray-500 placeholder-gray-500 transition-all focus:border-blue-300/40 focus:text-blue-300/40 hover:border-blue-300/40;
+    @apply outline-none bg-slate-400/10 rounded-sm border-b px-5 py-3 border-[#000000] text-gray-500 placeholder-gray-500 transition-all focus:border-blue-300/40 focus:text-blue-300/40 hover:border-blue-300/40;
   }
 }

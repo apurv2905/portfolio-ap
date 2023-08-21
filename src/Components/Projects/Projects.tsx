@@ -6,7 +6,32 @@ import { motion } from "framer-motion";
 type Props = {};
 
 export default function Projects({}: Props) {
-    const projects =[1, 2, 3, 4, 5];
+    const projects = [
+        {
+            key: 1,
+            projectName: "Netflix Clone",
+            imgUrl: "https://images.ctfassets.net/4cd45et68cgf/Rx83JoRDMkYNlMC9MKzcB/2b14d5a59fc3937afd3f03191e19502d/Netflix-Symbol.png?w=700&h=456",
+            description: "Netflix 2.0 app that has a Log In and Log Out Authentication with Google.It has a beautiful Home Screen with all the movies looking just like Netflix.\n" +
+                "There is also a subscription page where you can see your active monthly subscription."
+        },
+        {
+            key: 2,
+            projectName: "Food Talk - Ordering app",
+            imgUrl: "https://media.istockphoto.com/id/1004591262/vector/burger-with-crown-logo-illustration.jpg?s=612x612&w=0&k=20&c=LlzCALcTkHECx7O7QGFRJG7HLeleeVgb0V_2n7W0BU4=",
+            description: "Experience a seamless and intuitive food ordering experience through my React.js-based Food Ordering App. This dynamic application showcases a curated selection of meals, fetched in real-time from Firebase, coupled with a sleek and captivating user interface. The app boasts essential functionalities, including the ability to add items to the cart and remove them at will."
+        },
+        {
+            key: 3,
+            projectName: "Wage Works",
+            imgUrl: "https://www.ducem.in/wp-content/uploads/2021/07/28-Loans-Advances.png",
+            description: "Developed the payroll management system\n" +
+                "using Java with NetBeans IDE to creating a user\n" +
+                "interface to make it easy to use.\n" +
+                "Integrated the system with the MySQL database\n" +
+                "to enable easy access to employee data and\n" +
+                "payroll information.\n"
+        }
+    ];
     // @ts-ignore
     return (
         <motion.div
@@ -27,7 +52,7 @@ export default function Projects({}: Props) {
             <div className="relative w-full flex overflow-x-auto scrollbar-thin scrollbar-track-black scrollbar-thumb-blue-300/80 overflow-y-hidden snap-x snap-mandatory z-20">
                 {projects.map((project, i) => (
                     // eslint-disable-next-line react/jsx-key
-                    <div key={project} className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-32 xl:p-80 h-screen">
+                    <div key="key" className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-32 xl:p-80 h-screen">
                         <motion.img
                             initial={{
                                 opacity: 0,
@@ -39,22 +64,21 @@ export default function Projects({}: Props) {
                             }}
                             transition={{ duration: 1.2 }}
                             viewport={{ once: true }}
-                            className="w-[100px] md:w-[150px] xl:w-[200px]"
-                            src="https://ionicframework.com/docs/icons/logo-react-icon.png"
+                            className="w-[100px] md:w-[150px] xl:w-[180px] rounded-full object-cover"
+                            src={project.imgUrl}
                             alt=""
                         />
 
                         <div className="space-y-10 px-0 md:px-10 max-w-6xl">
                             <h4 className="text-2xl font-semibold text-center">
                                 <span>
-                                    Case Study {i + 1} of {projects.length}
+                                    Project {i + 1} of {projects.length}
                                 </span>
-                                : UPS clone
+                                : {project.projectName}
                             </h4>
 
-                            <p className="text-sm text-center">
-                                Netflix 2.0 app that has a Log In and Log Out Authentication with Google.It has a beautiful Home Screen with all the movies looking just like Netflix.
-                                There is also a subscription page where you can see your active monthly subscription.
+                            <p className="text-sm text-center max-w-[600px]">
+                                {project.description}
                             </p>
                         </div>
                     </div>
