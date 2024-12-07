@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-// import { PhoneIcon, MapPinIcon, EnvelopeIcon } from '@heroicons/react/24/solid';
 
 type Props = {};
 
@@ -9,21 +8,33 @@ export default function Projects({}: Props) {
     const projects = [
         {
             key: 1,
+            projectName: "DNS Server",
+            imgUrl: "https://cdn.vectorstock.com/i/500p/71/65/dns-line-icon-on-white-vector-42207165.jpg",
+            description: "Engineered a custom DNS server from scratch, implementing recursive and iterative query resolution to ensure fast and accurate domain name lookups."
+        },
+        {
+            key: 2,
             projectName: "Netflix Clone",
             imgUrl: "https://images.ctfassets.net/4cd45et68cgf/Rx83JoRDMkYNlMC9MKzcB/2b14d5a59fc3937afd3f03191e19502d/Netflix-Symbol.png?w=700&h=456",
             description: "Netflix 2.0 app that has a Log In and Log Out Authentication with Google.It has a beautiful Home Screen with all the movies looking just like Netflix.\n" +
                 "There is also a subscription page where you can see your active monthly subscription."
         },
         {
-            key: 2,
+            key: 3,
+            projectName: "Stock Pulse",
+            imgUrl: "https://cdn.jim-nielsen.com/ios/512/stocks-2018-04-25.png?rf=1024",
+            description: "Developed Stock Pulse, a React.js app, to display real-time stock prices for multinational corporations."
+        },
+        {
+            key: 4,
             projectName: "Food Talk - Ordering app",
             imgUrl: "https://media.istockphoto.com/id/1004591262/vector/burger-with-crown-logo-illustration.jpg?s=612x612&w=0&k=20&c=LlzCALcTkHECx7O7QGFRJG7HLeleeVgb0V_2n7W0BU4=",
             description: "Indulge in a smooth food ordering journey with my React.js Food Ordering App. Real-time Firebase integration brings a curated menu to life, while a sleek interface allows easy cart management. Enjoy seamless adding and removal of items for a satisfying experience."
         },
         {
-            key: 3,
+            key: 5,
             projectName: "Wage Works",
-            imgUrl: "https://www.ducem.in/wp-content/uploads/2021/07/28-Loans-Advances.png",
+            imgUrl: "https://thumbs.dreamstime.com/b/person-salary-growth-outline-icon-person-salary-growth-outline-icon-linear-style-sign-mobile-concept-web-design-employee-120759260.jpg",
             description: "Developed the payroll management system\n" +
                 "using Java with NetBeans IDE to creating a user\n" +
                 "interface to make it easy to use.\n" +
