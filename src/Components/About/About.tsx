@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-// import Image from "next/image";
 type Props = {};
 
 export default function About({}: Props) {
@@ -40,7 +39,7 @@ export default function About({}: Props) {
                     Concise <span className="underline decoration-blue-300/100">Introduction</span>
                 </h4>
                 <p className="py-0 my-0">
-                    Hello there, I am Apurv, a passionate and dedicated undergraduate student pursuing my studies at the prestigious Indian Institute of Information Technology Vadodara. I am on a journey to master the art of front-end development, crafting immersive and captivating digital experiences that seamlessly blend design and technology.
+                    Hello, I am Apurv, an entry-level Software Engineer at Tata Consultancy Services (TCS). I hold a B.Tech in Computer Science Engineering from the Indian Institute of Information Technology Vadodara. Passionate about software development, I strive to create innovative solutions that seamlessly integrate creativity and technology.
                 </p>
             </div>
         </motion.div>
